@@ -9,7 +9,7 @@ export default function RecommendationScreen({ route, navigation }) {
   useEffect(() => {
     const fetchRecommendations = async () => {
       try {
-        const response = await fetch('http://192.168.1.230:8000/recommendations', {
+        const response = await fetch('http://localhost:8000/recommendations', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ symptoms, diet }),
@@ -26,6 +26,9 @@ export default function RecommendationScreen({ route, navigation }) {
         }
 
         setRecommendations(data.recommended_foods || []); // If API returns undefined, fallback to []
+        console.log('Recommendations:');
+        (data.recommended_foods || []).forEach(food => console.log(' -', food)); // Log each food item
+
       } catch (error) {
         console.error('Error fetching recommendations:', error);
         setRecommendations([`Error: ${error.message}`]);  // Set as array with one error string
