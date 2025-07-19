@@ -1,3 +1,5 @@
+#! DEPRECATED PROJECT !
+
 # FlareFree 🍃 — AI-Powered Dietary Guidance for Autoimmune Wellness
 
 FlareFree is a mobile-first AI-powered application dedicated to empowering individuals with autoimmune conditions to live healthier lives through smarter dietary choices.
