@@ -1,4 +1,4 @@
-#DEPRECATED PROJECT !
+# DEPRECATED PROJECT !
 
 # FlareFree 🍃 — AI-Powered Dietary Guidance for Autoimmune Wellness
 
